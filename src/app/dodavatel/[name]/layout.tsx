@@ -20,7 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: provider.name,
+    /*   title: provider.name, */
+    title: `${provider.name} - Levná Elektřina`,
     description: provider.descriptionShort,
     openGraph: {
       images: [{ url: provider.logo }],
@@ -37,5 +38,5 @@ export default function Layout({ params }: Props): JSX.Element {
     notFound();
   }
 
-  return <ProviderDetailPage provider={provider as Provider} />; 
+  return <ProviderDetailPage provider={provider as Provider} />;
 }

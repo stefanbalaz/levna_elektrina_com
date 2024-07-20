@@ -8,8 +8,8 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const Layout: React.FC = () => {
-  return <ProviderPage />;
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  return <>{children}</>;
 };
 
 export default Layout;
