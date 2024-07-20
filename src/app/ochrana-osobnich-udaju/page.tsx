@@ -2,9 +2,6 @@
 
 import React from "react";
 import SectionContent from "../components/SectionContent";
-import { TbWorldSearch } from "react-icons/tb";
-import { RiCustomerService2Line } from "react-icons/ri";
-import { GiReceiveMoney } from "react-icons/gi";
 
 const DataPrivacyPage = () => {
   return (
