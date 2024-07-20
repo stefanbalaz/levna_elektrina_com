@@ -2,32 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media (min-width: 768px) {
+  .text-right {
+    text-align: center;
   }
-}
+} */
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+/* Font ClassNames
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+font-thin: 100,
+font-extraLight: 200,
+font-light: 300,
+font-normal: 400,
+font-medium: 500,
+font-semiBold: 600,
+font-bold: 700,
+font-extraBold: 800,
+font-black: 900,
+font-extraBlack: 950,
+
+Example:
+font-alteHaasGrotesk font-thin
+font-alteHaasGrotesk font-thin italic
+
+*/
+/* styles/globals.css or another CSS file */
