@@ -3,9 +3,9 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import SectionContent from "../../components/SectionContent";
-import { TbWorldSearch } from "react-icons/tb";
-import { RiCustomerService2Line } from "react-icons/ri";
-import { GiReceiveMoney } from "react-icons/gi";
+import { TbPigMoney } from "react-icons/tb";
+import { RxLapTimer } from "react-icons/rx";
+import { SiQuicklook } from "react-icons/si";
 import { Provider, ProviderDetailPageProps } from "./types"; // Import interfaces
 
 const ProviderDetailPage: React.FC<any> = ({
@@ -30,35 +30,49 @@ const ProviderDetailPage: React.FC<any> = ({
           <SectionContent
             mainHeadlineText={provider.name}
             mainHeadlineType="Headline2"
-            firstButtonText={`Srovnej nabídky od ${provider.nameShort}`}
-            firstButtonLink="/first-button-link"
+            firstButtonText={`Spočítej cenu elektřiny od ${provider.nameShort}`}
+            firstButtonLink={provider.link}
             firstButtonStyle="primary"
             provider={provider}
             background=""
           />
 
           <SectionContent
-            mainHeadlineText="Výhody změny dodavatele"
+            mainHeadlineText="Výhody změny dodavatele elektřiny"
             mainHeadlineType="Headline2"
-            subHeadlineText="Sub Headline"
+            subHeadlineText=""
             cardOneProps={{
-              cardOneIcon: TbWorldSearch,
-              cardOneHeadline: "Objektivní a rychlé",
+              cardOneIcon: TbPigMoney,
+              cardOneHeadline: "Úspora peněz",
               cardOneText:
-                "Okamžité online srovnání aktuálních nabídek dodavatelů",
+                "Porovnání cen online často odhalí levnější nabídky a umožní ušetřit na nákladech za elektřinu.",
             }}
             cardTwoProps={{
-              cardTwoIcon: GiReceiveMoney,
-              cardTwoHeadline: "Garance nejnižší ceny",
-              cardTwoText: "Mnohé online portály garantují nejlepší ceny",
+              cardTwoIcon: RxLapTimer,
+              cardTwoHeadline: "Jednoduchost",
+              cardTwoText:
+                "Proces změny dodavatele je rychlý a snadný, často lze vše vyřídit online bez nutnosti osobní návštěvy.",
             }}
             cardThreeProps={{
-              cardThreeIcon: RiCustomerService2Line,
-              cardThreeHeadline: "Zákaznický servis",
+              cardThreeIcon: SiQuicklook,
+              cardThreeHeadline: "Transparentnost",
               cardThreeText:
-                "Standardem internetových portálů je odborná podpora uživatelů",
+                "Online nástroje poskytují jasné srovnání nabídek a podmínek tarifů, což usnadňuje výběr.",
             }}
-            firstButtonText={`Srovnej nabídky od ${provider.nameShort}`}
+            sectionClassName=""
+            mainHeadlineClassName=""
+            subHeadlineClassName=""
+            paragraphClassName=""
+            firstButtonClassName=""
+            secondButtonClassName=""
+          />
+
+          <SectionContent
+            mainHeadlineText={provider.headline1}
+            mainHeadlineType="Headline2"
+            subHeadlineText=""
+            bulletPoints={provider.bulletPoints}
+            firstButtonText={`Více o ${provider.nameShort}`}
             firstButtonLink="/your-link"
             firstButtonStyle="primary"
             sectionClassName=""
@@ -69,43 +83,14 @@ const ProviderDetailPage: React.FC<any> = ({
             secondButtonClassName=""
           />
 
-          {/*    <SectionHeadlinesParagraphBulletsButtons
-            mainHeadlineText="Main Headline"
-            mainHeadlineType="Headline2"
-            subHeadlineText="Sub Headline"
-            bulletPoints={[
-              { headline: "First Headline", text: "First text content" },
-              { headline: "Second Headline", text: "Second text content" },
-              { headline: "Third Headline", text: "Third text content" },
-              { headline: "First Headline", text: "First text content" },
-              { headline: "Second Headline", text: "Second text content" },
-              { headline: "Third Headline", text: "Third text content" },
-            ]}
-            paragraphText="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            firstButtonText="Button 1"
-            firstButtonLink="#"
-            firstButtonStyle="primary"
-            secondButtonText="Button 2"
-            secondButtonLink="#"
-            secondButtonStyle="secondary"
-            sectionClassName="custom-section-class"
-            mainHeadlineClassName="custom-main-headline-class"
-            subHeadlineClassName="custom-sub-headline-class"
-            paragraphClassName="custom-paragraph-class"
-            firstButtonClassName="custom-first-button-class"
-            secondButtonClassName="custom-second-button-class"
-          /> */}
-
           <SectionContent
             mainHeadlineText={`Jak funguje změna dodavatele ku ${provider.name}`}
             mainHeadlineType="Headline2"
-            subHeadlineText="Sub Headline"
-            paragraphText={provider.descriptionTwo}
-            firstButtonText="First Button"
-            firstButtonLink="#"
+            subHeadlineText=""
+            paragraphText={`Změna smlouvy na dodávku elektřiny k novému dodavateli, jako je ${provider.name}, je jednoduchý proces. Nejprve si vyberte pro Vás nejvýhodnejší tarif od ${provider.nameShort}. Vyplňte žádost o změnu a další potřebné formuláře. Po podpisu smlouvy a udělení plné moci se ${provider.nameShort} postará o veškeré administrativní kroky, včetně výpovědi stávající smlouvy. Proces obvykle trvá několik týdnů. Jakmile je změna dokončena, ${provider.nameShort} vás informuje o zahájení nové dodávky elektřiny.`}
+            firstButtonText={`Spočítej cenu elektřiny od ${provider.nameShort}`}
+            firstButtonLink={provider.link}
             firstButtonStyle="primary"
-            secondButtonText="Second Button"
-            secondButtonStyle="secondary"
             sectionClassName="my-section"
             mainHeadlineClassName=""
             subHeadlineClassName=""

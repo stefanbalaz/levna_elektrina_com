@@ -12,56 +12,54 @@ const ChangeProcessPage = () => {
       <main className="font-alteHaasGrotesk font-normal text-black w-full box-border px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16">
         <div className="flex-grow flex flex-col justify-center items-center">
           <SectionContent
-            mainHeadlineText="Proces změny"
+            mainHeadlineText="Změna dodavatele energie: krok za krokem"
             mainHeadlineType="Headline2"
-            subHeadlineText="Sub Headline"
-            paragraphText={`Změna dodavatele energie může výrazně snížit tvé náklady a zvýšit spokojenost. Pokud ti končí fixace nebo jsi nespokojen se stávajícím dodavatelem, srovnej nabídky od nejlepších poskytovatelů a vyber si tu nejvýhodnější.\nOnline srovnání cen elektřiny je rychlé a snadné, a můžeš tak získat výhodnou smlouvu bez zbytečně vysokých záloh. Můžeš se také vyhnout sankcím při předčasné výpovědi smlouvy, pokud dodavatel jednostranně zvýší ceny. Najdi vhodného a ověřeného dodavatele, který ti nabídne nejlepší cenu a podmínky.`}
-            firstButtonText="Srovnej ceny dodavatelů"
-            firstButtonLink="/your-link"
-            firstButtonStyle="primary"
-            secondButtonText="Více o důvodech změny"
-            secondButtonLink="/your-link"
-            secondButtonStyle="secondary"
-            cardOneProps={{
-              cardOneIcon: TbWorldSearch,
-              cardOneHeadline: "Objektivní a rychlé",
-              cardOneText:
-                "Okamžité online srovnání aktuálních nabídek dodavatelů",
-            }}
-            cardTwoProps={{
-              cardTwoIcon: GiReceiveMoney,
-              cardTwoHeadline: "Garance nejnižší ceny",
-              cardTwoText: "Mnohé online portály garantují nejlepší ceny",
-            }}
-            cardThreeProps={{
-              cardThreeIcon: RiCustomerService2Line,
-              cardThreeHeadline: "Zákaznický servis",
-              cardThreeText:
-                "Standardem internetových portálů je odborná podpora uživatelů",
-            }}
-            priceChartProps={{
-              fetchUrl:
-                "https://data.kurzy.cz/json/komodity/id[cena-elektriny]den[365]mena[czk].json",
-              priceLabel: "Cena elektřiny",
-            }}
+            paragraphText={`Změna dodavatele energie může znamenat významné úspory na vašich účtech za elektřinu. Tento proces není složitý, pokud víte, jak postupovat. Následujte tento návod krok za krokem a zjistěte, jak snadno a rychle přejít k novému dodavateli.`}
+            sectionClassName="mb-0 sm:mb-0 md:mb-0 lg:mb-0 xl:mb-0 2xl:mb-0"
+            mainHeadlineClassName=""
+            paragraphClassName=""
+            background=""
+          />
+
+          <SectionContent
+            mainHeadlineText="Kroky ke změně dodavatele"
+            mainHeadlineType="Headline3"
+            paragraphText={`Většina odběratelů se rozhoduje pro změnu dodavatele, když chtějí ušetřit nebo nejsou spokojeni se službami stávajícího poskytovatele. Přechod k novému dodavateli je dnes již běžný a může vám přinést lepší ceny i služby.`}
             bulletPoints={[
-              { headline: "First Headline", text: "First text content" },
-              { headline: "Second Headline", text: "Second text content" },
-              { headline: "Third Headline", text: "Third text content" },
-              { headline: "Long Headline", text: "Long text content" },
+              {
+                headline: "Prostudování stávající smlouvy",
+                text: "Než začnete hledat nového dodavatele, věnujte čas důkladnému prostudování smlouvy se stávajícím poskytovatelem. Zjistěte, jaké jsou podmínky ukončení smlouvy a výpovědní lhůty.",
+              },
+              {
+                headline: "Hledání nového dodavatele",
+                text: "Hledání nového dodavatele by nemělo být zaměřeno jen na cenu. Důležité jsou i podmínky smlouvy a služby poskytované novým dodavatelem. Použijte online srovnávače k porovnání nabídek.",
+              },
+              {
+                headline: "Podání výpovědi stávajícímu dodavateli",
+                text: "Výpověď můžete podat sami, nebo tento úkol přenechat novému dodavateli, který se o vše postará na základě plné moci.",
+              },
+              {
+                headline: "Uzavření smlouvy s novým dodavatelem",
+                text: "Před podpisem nové smlouvy si pečlivě prostudujte všechny podmínky a ujistěte se, že souhlasí s vašimi očekáváními a předchozími domluvami.",
+              },
+              {
+                headline: "Informování provozovatele distribuční sítě",
+                text: "Po dokončení administrativních úkonů vás nový dodavatel informuje o datu zahájení nové dodávky. K tomuto datu musíte nahlásit samoodečet spotřeby.",
+              },
             ]}
             bulletClassName="custom-bullet-class"
-            textPicture={{
-              pictureSrc: "/path/to/picture.png",
-              pictureAlt: "Picture Description",
-              text: "This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.This is the description text for the picture.",
-            }}
             sectionClassName=""
             mainHeadlineClassName=""
             subHeadlineClassName=""
             paragraphClassName=""
+            background="grayLight"
+          />
+
+          <SectionContent
+            firstButtonText="Změnit dodavatele elektřiny"
+            firstButtonLink="https://www.kurzy.cz/elektrina/kalkulacka-cen"
+            firstButtonStyle="primary"
             firstButtonClassName=""
-            secondButtonClassName=""
             background=""
           />
         </div>

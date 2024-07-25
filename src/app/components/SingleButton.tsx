@@ -46,6 +46,10 @@ const SingleButton: React.FC<SingleButtonProps> = ({
     ${styles.bg} ${styles.text}
   `);
 
+  const isExternal =
+    buttonLink &&
+    (buttonLink.startsWith("http://") || buttonLink.startsWith("https://"));
+
   return (
     <div className={containerClasses}>
       {onClick ? (
@@ -54,7 +58,12 @@ const SingleButton: React.FC<SingleButtonProps> = ({
         </button>
       ) : (
         buttonLink && (
-          <Link href={buttonLink} className={buttonClasses}>
+          <Link
+            href={buttonLink}
+            className={buttonClasses}
+            target={isExternal ? "_blank" : "_self"}
+            rel={isExternal ? "noopener noreferrer" : undefined}
+          >
             {buttonText}
           </Link>
         )

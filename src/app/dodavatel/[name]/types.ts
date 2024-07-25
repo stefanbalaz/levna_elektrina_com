@@ -10,6 +10,8 @@ export interface Provider {
   descriptionShort: string;
   descriptionOne: string;
   descriptionTwo: string;
+  headline1?: string;
+  bulletPoints?: BulletPoint[];
 }
 
 export interface ProviderDetailPageProps {
