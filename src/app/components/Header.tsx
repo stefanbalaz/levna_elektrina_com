@@ -20,14 +20,20 @@ export default function Header() {
         mb-3 sm:mb-3 md:mb-4 lg:mb-6 xl:mb-8 2xl:mb-10
         "
       >
-        <h1 className="flex row font-alteHaasGrotesk font-extraStrong text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+        <h1
+          className="
+          flex row 
+          font-alteHaasGrotesk
+          font-extraStrong
+          text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-5xl"
+        >
           <Link href="/">
             <Logo />
           </Link>
         </h1>
 
         <div className="block lg:hidden">
-          <button
+          {/*      <button
             className="flex items-center px-3 py-2 border-2 rounded text-blue border-blue"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -41,6 +47,26 @@ export default function Header() {
               <title>Menu</title>
               <path
                 d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button> */}
+          <button
+            className="flex items-center px-3 py-2  text-blue"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <svg
+              className="fill-current h-6 w-6"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="green"
+              strokeWidth="2"
+            >
+              <title>Menu</title>
+              <path
+                /* d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" */
+                d="M4 6h16M4 12h16M4 18h16"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />

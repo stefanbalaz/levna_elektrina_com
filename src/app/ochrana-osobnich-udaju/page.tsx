@@ -10,7 +10,7 @@ const DataPrivacyPage = () => {
         <div className="flex-grow flex flex-col justify-center items-center">
           <SectionContent
             mainHeadlineText="Ochrana osobních údajů"
-            mainHeadlineType="Headline2"
+            mainHeadlineType="Headline1"
             subHeadlineText="1. Úvod"
             paragraphText={`Tento dokument (dále jen „Dokument“) popisuje způsob, jakým sbíráme, používáme a chráníme osobní údaje, které nám poskytnete při používání této webové stránky (dále jen „Stránka“). Tento Dokument je závazný pro každého, kdo navštěvuje nebo používá Stránku.`}
           />

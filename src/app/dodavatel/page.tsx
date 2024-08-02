@@ -41,7 +41,7 @@ export default function ProviderPage() {
       >
         <SectionContent
           mainHeadlineText="Dotavatelé elektřiny"
-          mainHeadlineType="Headline2"
+          mainHeadlineType="Headline1"
           paragraphText={`Výběr vhodného dodavatele energie je klíčový pro tvoji spokojenost a úspory:`}
           sectionClassName="mb-0 sm:mb-0 md:mb-0 lg:mb-0 xl:mb-0 2xl:mb-0"
         />

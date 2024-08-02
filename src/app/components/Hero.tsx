@@ -32,7 +32,7 @@ export default function Hero({
   imageAlt,
 }: HeroProps) {
   return (
-    <div className="relative w-full h-[300px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]  mb-4 sm:mb-4 md:mb-6 lg:mb-10 xl:mb-14 2xl:mb-16">
+    <div className="relative w-full h-[300px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]  mb-4 sm:mb-4 md:mb-6 lg:mb-8 xl:mb-10 2xl:mb-10">
       {/* <div className="relative w-full h-[70vh] mb-4 sm:mb-4 md:mb-6 lg:mb-10 xl:mb-14 2xl:mb-16"> */}
       <Image
         src={imageSrc}

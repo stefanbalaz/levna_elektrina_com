@@ -1,5 +1,5 @@
 import React from "react";
-import Headline3 from "./Headline3";
+import Headline2 from "./Headline2";
 
 interface CardProps {
   Icon?: React.ElementType;
@@ -26,7 +26,7 @@ const Card: React.FC<CardProps> = ({ Icon, headline, text }) => {
         />
       )}
 
-      <Headline3
+      <Headline2
         className="
           text-blue
           mb-2 sm:mb-2 md:mb-3 lg:mb-4 xl:mb-5 2xl:mb-6
@@ -34,7 +34,7 @@ const Card: React.FC<CardProps> = ({ Icon, headline, text }) => {
         "
       >
         {headline}
-      </Headline3>
+      </Headline2>
       <p className="">{text}</p>
     </div>
   );

@@ -10,7 +10,7 @@ const ImpresumPage = () => {
         <div className="flex-grow flex flex-col justify-center items-center">
           <SectionContent
             mainHeadlineText="Impresum"
-            mainHeadlineType="Headline2"
+            mainHeadlineType="Headline1"
             subHeadlineText="Provozovatel webové stránky:"
             paragraphText={`Štefan Baláž\nPflügerstrasse 79\n12047 Berlin\nSpolková republika Německo`}
           />

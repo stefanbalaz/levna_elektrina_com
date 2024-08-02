@@ -34,27 +34,27 @@ const CardThree: React.FC<CardThreeProps> = ({
     <div
       className="
         w-100 mx-auto
-        grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 
+        grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3 
         gap-3 sm:gap-y-3 md:gap-y-3 lg:gap-5 xl:gap-7 2xl:gap-9
-        text-1xl leading-relaxed sm:text-1xl sm:leading-relaxed md:text-2xl md:leading-relaxed lg:text-2xl lg:leading-relaxed xl:text-3xl xl:leading-relaxed 2xl:text-3xl 2xl:leading-loose
+       text-lg leading-relaxed sm:text-xl sm:leading-relaxed md:text-xl md:leading-relaxed lg:text-2xl lg:leading-relaxed xl:text-2xl xl:leading-relaxed 2xl:text-2xl 2xl:leading-relaxed 
         mb-4 sm:mb-4 md:mb-6 lg:mb-10 xl:mb-14 2xl:mb-16    
       "
     >
-      <div className="bg-grayLight w-full sm:max-w-xs md:max-w-sm lg:max-w-md mx-auto">
+      <div className="bg-grayLight w-full sm:max-w-xs md:max-w-sm 2xl:max-w-md mx-auto">
         <Card
           Icon={cardOneIcon}
           headline={cardOneHeadline}
           text={cardOneText}
         />
       </div>
-      <div className="bg-grayLight w-full sm:max-w-xs md:max-w-sm lg:max-w-md mx-auto">
+      <div className="bg-grayLight w-full sm:max-w-xs md:max-w-sm 2xl:max-w-md mx-auto">
         <Card
           Icon={cardTwoIcon}
           headline={cardTwoHeadline}
           text={cardTwoText}
         />
       </div>
-      <div className="sm:col-span-2 lg:col-span-1 bg-grayLight w-full sm:max-w-xs md:max-w-sm lg:max-w-md mx-auto">
+      <div className="sm:col-span-2 2xl:col-span-1 bg-grayLight w-full sm:max-w-xs md:max-w-sm 2xl:max-w-md mx-auto">
         <Card
           Icon={cardThreeIcon}
           headline={cardThreeHeadline}

@@ -13,7 +13,7 @@ const ChangeReasonPage = () => {
         <div className="flex-grow flex flex-col justify-center items-center">
           <SectionContent
             mainHeadlineText="Proč změnit dodavatele elektřiny"
-            mainHeadlineType="Headline2"
+            mainHeadlineType="Headline1"
             subHeadlineText="Úspora nákladů"
             paragraphText={`Jedním z hlavních důvodů pro změnu dodavatele energie je snížení nákladů. Pokud váš současný dodavatel zvýší ceny, můžete smlouvu vypovědět bez sankcí a najít výhodnější nabídku. Mnoho spotřebitelů tak ušetří značné částky ročně, zvláště pokud využijí období, kdy jsou energetické tarify nižší.`}
             sectionClassName="mb-0 sm:mb-0 md:mb-0 lg:mb-0 xl:mb-0 2xl:mb-0"
@@ -37,7 +37,7 @@ const ChangeReasonPage = () => {
 
           <SectionContent
             mainHeadlineText="Kdy změnit dodavatele elektřiny"
-            mainHeadlineType="Headline2"
+            mainHeadlineType="Headline1"
             cardOneProps={{
               cardOneIcon: MdOutlinePendingActions,
               cardOneHeadline: "Konec fixace",

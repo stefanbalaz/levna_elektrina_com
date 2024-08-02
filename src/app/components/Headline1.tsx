@@ -6,16 +6,16 @@ interface Props {
   className?: string;
 }
 
-const Headline3 = ({ children, className }: Props) => {
+const Headline1 = ({ children, className }: Props) => {
   const classes = twMerge(`
-    w-100  mx-auto text-center
-    text-blue  font-lora font-bold
-    text-base sm:text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl
+    w-100 mx-auto text-center
+    text-blue font-lora font-bold
+    text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-5xl
     leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed 2xl:leading-relaxed
     mb-4 sm:mb-4 md:mb-6 lg:mb-10 xl:mb-14 2xl:mb-16,
     ${className ?? ""}
   `);
-  return <h3 className={classes}>{children}</h3>;
+  return <h1 className={classes}>{children}</h1>;
 };
 
-export default Headline3;
+export default Headline1;

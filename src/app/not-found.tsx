@@ -21,7 +21,7 @@ export default function NotFound() {
         "
         />
         <SectionContent
-          mainHeadlineType="Headline2"
+          mainHeadlineType="Headline1"
           mainHeadlineText="Stránka nenalezena"
           paragraphText="Stránka, kterou hledáte, neexistuje."
           firstButtonText="Zpět na hlavní stránku"

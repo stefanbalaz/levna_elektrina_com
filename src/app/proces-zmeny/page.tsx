@@ -13,7 +13,7 @@ const ChangeProcessPage = () => {
         <div className="flex-grow flex flex-col justify-center items-center">
           <SectionContent
             mainHeadlineText="Změna dodavatele energie: krok za krokem"
-            mainHeadlineType="Headline2"
+            mainHeadlineType="Headline1"
             paragraphText={`Změna dodavatele energie může znamenat významné úspory na vašich účtech za elektřinu. Tento proces není složitý, pokud víte, jak postupovat. Následujte tento návod krok za krokem a zjistěte, jak snadno a rychle přejít k novému dodavateli.`}
             sectionClassName="mb-0 sm:mb-0 md:mb-0 lg:mb-0 xl:mb-0 2xl:mb-0"
             mainHeadlineClassName=""
@@ -23,7 +23,7 @@ const ChangeProcessPage = () => {
 
           <SectionContent
             mainHeadlineText="Kroky ke změně dodavatele"
-            mainHeadlineType="Headline3"
+            mainHeadlineType="Headline2"
             paragraphText={`Většina odběratelů se rozhoduje pro změnu dodavatele, když chtějí ušetřit nebo nejsou spokojeni se službami stávajícího poskytovatele. Přechod k novému dodavateli je dnes již běžný a může vám přinést lepší ceny i služby.`}
             bulletPoints={[
               {

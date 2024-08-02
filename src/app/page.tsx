@@ -36,7 +36,7 @@ export default function Home() {
 
           <SectionContent
             mainHeadlineText="Jak funguje změna dodavatele"
-            mainHeadlineType="Headline2"
+            mainHeadlineType="Headline1"
             paragraphText={`Výběr vhodného dodavatele energie je klíčový pro Vaši spokojenost a úspory. Zaměřte se nejen na cenu elektřiny, ale také na kvalitu zákaznické péče a obchodní podmínky.\nProces změny dodavatele energie může být snadný, pokud novému dodavateli udělíte plnou moc k zastupování, což urychlí celý proces. Po výběru nového dodavatele je nezbytné důkladně prostudovat smlouvu kterou uzavíráte.\nPo dokončení všech úkonů začne Váš nový dodavatel dodávat energii, a Vy si můžete užívat výhod levnějších tarifů a lepší služby.`}
             firstButtonText="Srovnejte ceny dodavatelů"
             firstButtonLink="https://www.kurzy.cz/elektrina/kalkulacka-cen"
@@ -54,7 +54,7 @@ export default function Home() {
 
           <SectionContent
             mainHeadlineText="Výhody změny dodavatele"
-            mainHeadlineType="Headline2"
+            mainHeadlineType="Headline1"
             cardOneProps={{
               cardOneIcon: TbWorldSearch,
               cardOneHeadline: "Objektivní a rychlé",
@@ -85,7 +85,7 @@ export default function Home() {
 
           <SectionContent
             mainHeadlineText="Vývoj ceny elektrické energie"
-            mainHeadlineType="Headline2"
+            mainHeadlineType="Headline1"
             paragraphText={`Ceny elektřiny na burze Power Exchange Central Europe (PXE) ukazují, jak se vyvíjí trh s energií. Graf znázorňuje vývoj ceny za 1 MWh v CZK za poslední rok, což vám může pomoci lépe se rozhodnout při výběru dodavatele energie.`}
             firstButtonText="Srovnejte ceny dodavatelů"
             firstButtonLink="https://www.kurzy.cz/elektrina/kalkulacka-cen"

@@ -30,7 +30,7 @@ export default function Logos() {
       {logos.map((logo, index) => (
         <div
           key={index}
-          className="relative h-[22px] sm:h-[25px] md:h-[30px] lg:h-[40px] xl:h-[50px] 2xl:h-[70px]
+          className="relative h-[22px] sm:h-[25px] md:h-[30px] lg:h-[35px] xl:h-[40px] 2xl:h-[45px]
           mb-4 sm:mb-4 md:mb-6 lg:mb-10 xl:mb-14 2xl:mb-16
           "
         >

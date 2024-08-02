@@ -11,7 +11,7 @@ This component is used to render a section with various types of content, includ
 
 - **Main Headline**:
   - `mainHeadlineText`: The text for the main headline.
-  - `mainHeadlineType`: The type of the main headline (e.g., "Headline2").
+  - `mainHeadlineType`: The type of the main headline (e.g., "Headline1").
 - **Sub Headline**:
   - `subHeadlineText`: The text for the sub headline.
 - **Paragraph**:

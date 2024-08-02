@@ -1,7 +1,7 @@
 
           <SectionContent
             mainHeadlineText="Proc zmenit dodavatele"
-            mainHeadlineType="Headline2"
+            mainHeadlineType="Headline1"
             subHeadlineText="Sub Headline"
             paragraphText={`Zmena dodavatele energie muže výrazne snížit tvé náklady a zvýšit spokojenost. Pokud ti koncí fixace nebo jsi nespokojen se stávajícím dodavatelem, srovnej nabídky od nejlepších poskytovatelu a vyber si tu nejvýhodnejší.\nOnline srovnání cen elektriny je rychlé a snadné, a mužeš tak získat výhodnou smlouvu bez zbytecne vysokých záloh. Mužeš se také vyhnout sankcím pri predcasné výpovedi smlouvy, pokud dodavatel jednostranne zvýší ceny. Najdi vhodného a overeného dodavatele, který ti nabídne nejlepší cenu a podmínky.`}
             firstButtonText="Srovnej ceny dodavatelu"

@@ -67,13 +67,13 @@ export default function PriceChart({ fetchUrl, priceLabel }: PriceChartProps) {
     <div
       className="
       w-full
-  text-1xl leading-relaxed sm:text-1xl sm:leading-relaxed md:text-2xl md:leading-relaxed lg:text-2xl lg:leading-relaxed xl:text-3xl xl:leading-relaxed 2xl:text-3xl 2xl:leading-loose 
+ text-lg leading-relaxed sm:text-xl sm:leading-relaxed md:text-xl md:leading-relaxed lg:text-2xl lg:leading-relaxed xl:text-2xl xl:leading-relaxed 2xl:text-2xl 2xl:leading-relaxed 
   mb-4 sm:mb-4 md:mb-6 lg:mb-10 xl:mb-14 2xl:mb-16"
     >
       <div
         className="
       self-end text-blue
-      text-1xl leading-relaxed sm:text-1xl sm:leading-relaxed md:text-2xl md:leading-relaxed lg:text-2xl lg:leading-relaxed xl:text-3xl xl:leading-relaxed 2xl:text-3xl 2xl:leading-loose 
+     text-lg leading-relaxed sm:text-xl sm:leading-relaxed md:text-xl md:leading-relaxed lg:text-2xl lg:leading-relaxed xl:text-2xl xl:leading-relaxed 2xl:text-2xl 2xl:leading-relaxed 
       mb-1 sm:mb-1 md:mb-2 lg:mb-3 xl:mb-4 2xl:mb-5
       "
       >

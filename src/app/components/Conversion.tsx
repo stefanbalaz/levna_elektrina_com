@@ -92,8 +92,8 @@ export default function Conversion({
 
 import React from "react";
 import { twMerge } from "tailwind-merge";
+import Headline1 from "./Headline1";
 import Headline2 from "./Headline2";
-import Headline3 from "./Headline3";
 import SingleButton from "./SingleButton";
 
 interface ConversionProps {
@@ -132,7 +132,7 @@ export default function Conversion({
         p-3 sm:p-3 md:p-4 lg:p-6 xl:p-8 2xl:p-10
       `)}
     >
-      <Headline2
+      <Headline1
         className={twMerge(`
           text-left text-blue 
           mb-1 sm:mb-1 md:mb-2 lg:mb-3 xl:mb-3 2xl:mb-4
@@ -140,9 +140,9 @@ export default function Conversion({
         `)}
       >
         {mainHeadline}
-      </Headline2>
+      </Headline1>
 
-      <Headline3
+      <Headline2
         className={twMerge(`
           text-left text-blue
           mb-1 sm:mb-1 md:mb-2 lg:mb-3 xl:mb-3 2xl:mb-4
@@ -150,12 +150,12 @@ export default function Conversion({
         `)}
       >
         {subHeadline}
-      </Headline3>
+      </Headline2>
 
       <div
         className={twMerge(`
           flex flex-col 
-          text-1xl leading-relaxed sm:text-1xl sm:leading-relaxed md:text-2xl md:leading-relaxed lg:text-2xl lg:leading-relaxed xl:text-3xl xl:leading-relaxed 2xl:text-3xl 2xl:leading-relaxed
+        text-1xl leading-relaxed sm:text-1xl sm:leading-relaxed md:text-2xl md:leading-relaxed lg:text-2xl lg:leading-relaxed xl:text-2xl xl:leading-relaxed 2xl:text-2xl 2xl:leading-relaxed 
           mb-1 sm:mb-1 md:mb-2 lg:mb-3 xl:mb-3 2xl:mb-4
         `)}
       >
@@ -170,7 +170,7 @@ export default function Conversion({
             <div
               className={twMerge(`
                 flex justify-center items-center gap-y-10 w-6 h-6 md:w-8 md:h-8 lg:w-8 lg:h-8 xl:w-10 xl:h-10 bg-blueLight text-blue rounded-full font-bold
-                text-base leading-relaxed sm:text-base sm:leading-relaxed md:text-lg md:leading-relaxed lg:text-lg lg:leading-relaxed xl:text-2xl xl:leading-relaxed 2xl:text-2xl 2xl:leading-relaxed
+               text-1xl leading-relaxed sm:text-1xl sm:leading-relaxed md:text-2xl md:leading-relaxed lg:text-2xl lg:leading-relaxed xl:text-2xl xl:leading-relaxed 2xl:text-2xl 2xl:leading-relaxed 
               `)}
             >
               {index + 1}

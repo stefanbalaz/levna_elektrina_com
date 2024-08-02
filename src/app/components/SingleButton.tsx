@@ -40,8 +40,8 @@ const SingleButton: React.FC<SingleButtonProps> = ({
 
   const buttonClasses = twMerge(`
     rounded-sm
-    px-2 md:px-3.5 xl:px-5 2xl:px-6.5 py-1.5 md:py-2.5 xl:py-3.5 2xl:py-4.5
-    text-base sm:text-base md:text-lg lg:text-2xl xl:text-2xl 2xl:text-3xl
+px-1.5 md:px-2.5 xl:px-3 2xl:px-4.5 py-1.5 md:py-2 xl:py-2 2xl:py-2.5
+    text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl
     font-normal
     ${styles.bg} ${styles.text}
   `);

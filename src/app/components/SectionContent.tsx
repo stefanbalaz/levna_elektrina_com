@@ -1,7 +1,7 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
+import Headline1 from "./Headline1";
 import Headline2 from "./Headline2";
-import Headline3 from "./Headline3";
 import Paragraph from "./Paragraph";
 import DoubleButton from "./DoubleButton";
 import SingleButton from "./SingleButton";
@@ -14,7 +14,7 @@ import { BulletPoint } from "../dodavatel/[name]/types";
 
 interface SectionProps {
   mainHeadlineText?: string;
-  mainHeadlineType?: "Headline2" | "Headline3" | "none";
+  mainHeadlineType?: "Headline1" | "Headline2" | "none";
   subHeadlineText?: string;
   paragraphText?: string;
   firstButtonText?: string;
@@ -107,13 +107,13 @@ const SectionContent: React.FC<SectionProps> = ({
         `);
       }
 
-      if (mainHeadlineType === "Headline2") {
+      if (mainHeadlineType === "Headline1") {
+        return (
+          <Headline1 className={headlineClasses}>{mainHeadlineText}</Headline1>
+        );
+      } else if (mainHeadlineType === "Headline2") {
         return (
           <Headline2 className={headlineClasses}>{mainHeadlineText}</Headline2>
-        );
-      } else if (mainHeadlineType === "Headline3") {
-        return (
-          <Headline3 className={headlineClasses}>{mainHeadlineText}</Headline3>
         );
       }
     }
@@ -122,9 +122,9 @@ const SectionContent: React.FC<SectionProps> = ({
   const renderSubHeadline = () => {
     if (subHeadlineText) {
       return (
-        <Headline3 className={subHeadlineClassName}>
+        <Headline2 className={subHeadlineClassName}>
           {subHeadlineText}
-        </Headline3>
+        </Headline2>
       );
     }
     return null;

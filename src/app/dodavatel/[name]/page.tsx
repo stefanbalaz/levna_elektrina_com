@@ -29,7 +29,7 @@ const ProviderDetailPage: React.FC<any> = ({
         <div className="flex-grow flex flex-col justify-center items-center">
           <SectionContent
             mainHeadlineText={provider.name}
-            mainHeadlineType="Headline2"
+            mainHeadlineType="Headline1"
             firstButtonText={`Spočítej cenu elektřiny od ${provider.nameShort}`}
             firstButtonLink={provider.link}
             firstButtonStyle="primary"
@@ -39,7 +39,7 @@ const ProviderDetailPage: React.FC<any> = ({
 
           <SectionContent
             mainHeadlineText="Výhody změny dodavatele elektřiny"
-            mainHeadlineType="Headline2"
+            mainHeadlineType="Headline1"
             subHeadlineText=""
             cardOneProps={{
               cardOneIcon: TbPigMoney,
@@ -69,7 +69,7 @@ const ProviderDetailPage: React.FC<any> = ({
 
           <SectionContent
             mainHeadlineText={provider.headline1}
-            mainHeadlineType="Headline2"
+            mainHeadlineType="Headline1"
             subHeadlineText=""
             bulletPoints={provider.bulletPoints}
             firstButtonText={`Více o ${provider.nameShort}`}
@@ -85,7 +85,7 @@ const ProviderDetailPage: React.FC<any> = ({
 
           <SectionContent
             mainHeadlineText={`Jak funguje změna dodavatele ku ${provider.name}`}
-            mainHeadlineType="Headline2"
+            mainHeadlineType="Headline1"
             subHeadlineText=""
             paragraphText={`Změna smlouvy na dodávku elektřiny k novému dodavateli, jako je ${provider.name}, je jednoduchý proces. Nejprve si vyberte pro Vás nejvýhodnejší tarif od ${provider.nameShort}. Vyplňte žádost o změnu a další potřebné formuláře. Po podpisu smlouvy a udělení plné moci se ${provider.nameShort} postará o veškeré administrativní kroky, včetně výpovědi stávající smlouvy. Proces obvykle trvá několik týdnů. Jakmile je změna dokončena, ${provider.nameShort} vás informuje o zahájení nové dodávky elektřiny.`}
             firstButtonText={`Spočítej cenu elektřiny od ${provider.nameShort}`}

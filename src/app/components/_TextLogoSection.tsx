@@ -1,5 +1,5 @@
 import React from "react";
-import Headline2 from "./Headline2";
+import Headline1 from "./Headline1";
 import Paragraph from "./Paragraph";
 import ProviderLogo from "./ProviderLogo";
 import SingleButton from "./SingleButton";
@@ -25,7 +25,7 @@ export default function TextLogoSection({ provider }: TextLogoSectionProps) {
           mb-4 sm:mb-4 md:mb-6 lg:mb-10 xl:mb-14 2xl:mb-16
         "
       >
-        <Headline2>{provider.name}</Headline2>
+        <Headline1>{provider.name}</Headline1>
         <div className="relative w-3/4">
           <div className="bg-grayLight float-right w-1/3 h-24 md:h-48 lg:h-64 flex justify-center items-center m-4 mt-0 mr-1">
             <ProviderLogo provider={provider} />

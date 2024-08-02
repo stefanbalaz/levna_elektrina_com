@@ -85,7 +85,10 @@ export default function RootLayout({
     >
       <body>
         <Header />
-        <main className="font-yantramanav">{children}</main>
+        <div className="w-full mx-auto xl:w-11/12 ">
+          <main className="font-yantramanav">{children}</main>
+        </div>
+
         <CookieConsent />
         <Footer eMail="info@levna-elektrina.com" />
       </body>

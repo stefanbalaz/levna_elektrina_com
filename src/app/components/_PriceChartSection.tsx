@@ -1,5 +1,5 @@
 import React from "react";
-import Headline2 from "./Headline2";
+import Headline1 from "./Headline1";
 import PriceChart from "./PriceChart";
 import DoubleButton from "./DoubleButton";
 import Paragraph from "./Paragraph";
@@ -37,7 +37,7 @@ const PriceChartSection: React.FC<PriceChartSectionProps> = ({
         mb-4 sm:mb-4 md:mb-6 lg:mb-10 xl:mb-14 2xl:mb-16
       "
     >
-      <Headline2>{headlineText}</Headline2>
+      <Headline1>{headlineText}</Headline1>
       <Paragraph text={paragraphText} />
       <PriceChart fetchUrl={fetchUrl} priceLabel={priceLabel} />
       <DoubleButton
